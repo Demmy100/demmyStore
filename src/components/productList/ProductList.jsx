@@ -1,9 +1,20 @@
 import React from 'react'
+import "./ProductList.css"
+import Product from "../product/Product"
 
-const ProductList = () => {
+const ProductList = ({products}) => {
+  /* console.log(products) */
   return (
-    <div>
-      
+    <div className='product-list'>
+      {
+        products.map((product) => {
+          let discountedPrice = (product.price) - (product.price * (product.discountPercentage / 100));
+
+          return (
+            <Product key={product.id} product={{...product, discountedPrice}}/>
+          )
+        })
+      }
     </div>
   )
 }

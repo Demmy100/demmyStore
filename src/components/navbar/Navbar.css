@@ -2,16 +2,90 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 15px 0;
 }
 
 .navbar-logo {
     display: flex;
     align-items: center;
     gap: 6px;
+    color: #000;
+    /* flex: 1; */
 }
 
 .navbar-search {
     display: flex;
     align-items: center;
     gap: 10px;
+    /* flex: 2; */
+}
+
+.navbar-search-main {
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgray;
+    padding: 8px;
+    gap: 4px;
+    width: 600px;
+    border-radius: 5px;
+}
+
+.navbar-search-main>span {
+    color: lightgray;
+}
+
+.navbar-search-main>input {
+    border: none;
+    outline: none;
+    padding: 2px;
+    width: 100%;
+}
+
+.navbar-button {
+    color: white;
+    background-color: #FF6433;
+    text-transform: uppercase;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.navbar-items {
+    display: flex;
+    /* align-items: flex-start;
+    justify-content: space-between; */
+    gap: 20px;
+    /* flex: 2; */
+}
+
+.navbar-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.navbar-item-cart {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    gap: 8px;
+}
+
+.navbar-item-cart-value {
+    position: absolute;
+    top: -9px;
+    right: 32px;
+    font-size: 15px;
+}
+
+a {
+    color: #000;
+}
+
+@media screen and (max-width: 700px) {
+    .navbar-search, .navbar-item {
+        display: none;
+    }
 }

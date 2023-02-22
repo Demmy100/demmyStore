@@ -1,0 +1,49 @@
+.home {
+    margin-top: 20px;
+}
+
+.home-wrapper {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.side {
+    width: 25%;
+}
+.slide {
+    width: 50%;
+}
+.home-image {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.home-img1>img {
+    border-radius: 5px;
+}
+
+.home-product {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: white;
+    padding: 10px;
+    text-transform: uppercase;
+    box-shadow: 0px 10px 20px 5px rgba(0,0,0,0.05);
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 700px) {
+    .home-wrapper {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .side, .home-image {
+        display: none;
+    }
+    .slide {
+        width: 100%;
+    }
+}

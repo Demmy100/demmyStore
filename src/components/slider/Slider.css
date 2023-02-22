@@ -1,0 +1,11 @@
+.slider {
+    width: 100%;
+}
+.slider-item>img{
+    max-height: 400px;
+    border-radius: 5px;
+}
+
+.slider-content {
+    overflow-y: hidden;
+}

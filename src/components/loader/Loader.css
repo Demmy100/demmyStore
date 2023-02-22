@@ -1,0 +1,9 @@
+.loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader-container>img {
+    width: 80px;
+}

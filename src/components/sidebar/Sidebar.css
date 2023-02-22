@@ -1,0 +1,19 @@
+.sidebar {
+    background-color: white;
+    width: 300px;
+    padding: 10px;
+    box-shadow: 0px 10px 20px 5px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+.sidebar-link {
+    margin-bottom: 5px;
+    color: #000;
+    font-weight: 300;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.sidebar-link:hover {
+    color: #F94E30;
+}

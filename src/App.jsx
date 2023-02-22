@@ -6,10 +6,14 @@ import CategoryPage from './pages/categoryProductPage/CategoryProductPage'
 import ProductPage from './pages/productSinglePage/ProductSinglePage'
 import SearchPage from './pages/searchPage/SearchPage'
 import Header from './components/header/Header'
+import { Provider } from 'react-redux'
+import store from './store/Store'
+import Footer from './components/footer/Footer'
 
 function App() {
   return (
     <div>
+      <Provider store={store}>
       <BrowserRouter>
       <Header />
       <Routes>
@@ -19,7 +23,9 @@ function App() {
         <Route path='/cart' element={<CartPage/>} />
         <Route path='search/:searchTerm' element={<SearchPage/>} />
       </Routes> 
+      <Footer/>
       </BrowserRouter>
+      </Provider>
     </div>
   )
 }
