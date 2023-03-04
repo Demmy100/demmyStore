@@ -1,6 +1,7 @@
 .product-container {
     background-color: white;
     position: relative;
+    border-radius: 10px;
 }
 
 .product-container:hover {
@@ -8,10 +9,20 @@
     transition: all 300ms ease-in-out;
 }
 
+.product-img {
+    /* padding: 10px 0; */
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    
+}
+
 .product-img>img {
     width: 100%;
-    height: 250px;
+    height: 100%;
     object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .product-title {

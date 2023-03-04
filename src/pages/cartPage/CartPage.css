@@ -23,6 +23,10 @@
     color: #FF6433;
 }
 
+.cart {
+    margin-top: 80px;
+}
+
 .cart.container {
     padding: 0;
 }
